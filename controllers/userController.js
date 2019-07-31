@@ -19,9 +19,10 @@ export const userDetail = (req, res) => {
 }
 
 export const editProfile = (req, res) => {
+    console.log('asd')
     res.render("editProfile", {pageTitle: "Edit Profile"})
 }
 
 export const changePassword = (req, res) => {
-    res.render("chagnePassword", {pageTitle: "Change Password"})
+    res.render("changePassword", {pageTitle: "Change Password"})
 }

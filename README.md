@@ -9,8 +9,8 @@ Cloning Youtube with VanillaJS and NodeJS# wetube
 - [x] Login
 - [x] Search
 - [ ] User Detail
-- [x] Edit Profile
-- [x] Change Password
-- [x] Upload
+- [ ] Edit Profile
+- [ ] Change Password
+- [ ] Upload
 - [ ] Video Detail
-- [x] Edit Video
+- [ ] Edit Video

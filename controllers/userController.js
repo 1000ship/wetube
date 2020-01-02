@@ -5,6 +5,7 @@ export const getJoin = (req, res) => {
 }
 
 export const postJoin = (req, res) => {
+    // console.log( req.body ) // for checking request body
     const {
         body: {name, email, password, password2}
     } = req;
@@ -18,8 +19,14 @@ export const postJoin = (req, res) => {
     }
 }
 
-export const login = (req, res) => {
+export const getLogin = (req, res) => {
     res.render("login", {pageTitle: "Login"})
+}
+export const postLogin = (req, res) => {
+    const {
+        body: { id, password }
+    } = req;
+    res.redirect( routes.home )
 }
 
 export const logout = (req, res) => {
@@ -35,7 +42,6 @@ export const userDetail = (req, res) => {
 }
 
 export const editProfile = (req, res) => {
-    console.log('asd')
     res.render("editProfile", {pageTitle: "Edit Profile"})
 }
 

@@ -1,3 +1,4 @@
+import routes from '../routes.js'
 import {videos} from "../db"
 
 export const home = (req, res) => {
@@ -13,8 +14,15 @@ export const search = (req, res) => {
     
 }
 
-export const upload = (req, res) => {
+export const getUpload = (req, res) => {
     res.render("upload", {pageTitle: "Upload"})
+}
+
+export const postUpload = (req, res) => {
+    const {
+        body: {file, title, description}
+    } = req;
+    res.redirect( routes.videoDetail(324393) )
 }
 
 export const videoDetail = (req, res) => {

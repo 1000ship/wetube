@@ -15,7 +15,8 @@ const app = express();
 
 app.use(helmet())
 app.set('view engine', 'pug')
-app.use("/uploads", express.static("uploads")) // uploads 로 들어가면 여기로 연결
+app.use("/uploads", express.static("uploads")); // uploads 로 들어가면 여기로 연결
+app.use("/static", express.static("static"));
 app.use(cookieParser())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))

@@ -1,0 +1,30 @@
+.video__player, .video__info, .video__comments {
+    display: block;
+    width: 90vw;
+    margin: auto auto;
+    margin-top: 20px;
+}
+
+.video__player {
+    video {
+        width: 100%;
+    }
+}
+
+.video__info {
+    a {
+        background-color: $dark-red;
+        color: $white;
+        border-radius: 5px;
+        font-size: 12pt;
+        font-weight: 550;
+        padding: 6px;
+        margin: 6px;
+        line-height: 12pt;
+    }
+    .video__title {
+        margin-top: 20px;
+        font-size: 15pt;
+        font-weight: 550;
+    }
+}

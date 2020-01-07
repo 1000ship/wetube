@@ -1,0 +1,35 @@
+.header {
+    background-color: $white;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    color: $white;
+    .header__column {
+        display: flex;
+        align-items: center;
+        &:first-child {
+            a {
+                color: $red;
+                font-size: 20pt;
+            }
+        }
+        margin: 10px;
+        a {
+            font-size: 14pt;
+            color: $black;
+            font-weight: 550;
+            font-style: unset;
+        }
+        input {
+            width: 50vw;
+            font-size: 14pt;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+            padding: 10px;
+        }
+    }
+}

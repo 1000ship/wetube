@@ -1,4 +1,14 @@
-.videos {
+.search__header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: 450;
+    color: $dark-red;
+
+}
+
+.search__videos {
     display: flex;
     justify-content: space-around;
     width: 100vw;
@@ -17,5 +27,11 @@
             font-size: 12pt;
             color: $black;
         }
+    }
+
+    h5 {
+        font-size: 20pt;
+        font-weight: 600;
+        color: $black;
     }
 }

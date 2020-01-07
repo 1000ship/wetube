@@ -1,0 +1,9 @@
+.footer {
+    color: $black;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    .footer__copyright {
+        display: inline-flex;
+    }
+}

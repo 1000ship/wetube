@@ -1,0 +1,29 @@
+.form-container {
+    width: 50vw;
+    min-width: 400px;
+    margin: 0px auto;
+    input {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14pt;
+        &[type=email], &[type=password], &[type=text] {
+            padding: 5px;
+        }
+        &[type=submit] {
+            background-color: $dark-grey;
+            padding: 4px;
+        }
+    }
+    .social-login {
+        margin-top: 15px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        button {
+            font-size: 12pt;
+            width: 49%;
+            padding: 4px;
+        }
+    }
+
+}
